@@ -24,15 +24,17 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a library for reading, creating, and writing shapefiles as defined by
-ESRI(r) using Perl. The Perl code uses Frank Warmerdam's Shapefile C Library
-(http://shapelib.maptools.org/). The library is included in this distribution.
+This is a library for reading, creating, and writing shapefiles as
+defined by ESRI(r) using Perl. The Perl code uses Frank Warmerdam's
+Shapefile C Library (http://shapelib.maptools.org/). The library is
+included in this distribution.
 
 %description -l pl
-Biblioteka ta umo¿liwia wczytywanie, tworzenie oraz zapisywanie tzw. shapefiles
-zdefiniowanych przez ESRI(r) z poziomu Perla. Kod wykorzystuje bibliotekê C
-Shapefile Franka Warmerdama (http://shapelib.maptools.org/). Biblioteka ta jest
-za³±czona w pakiecie.
+Biblioteka ta umo¿liwia wczytywanie, tworzenie oraz zapisywanie tzw.
+shapefiles zdefiniowanych przez ESRI(r) z poziomu Perla. Kod
+wykorzystuje bibliotekê C Shapefile Franka Warmerdama
+(http://shapelib.maptools.org/). Biblioteka ta jest za³±czona w
+pakiecie.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -58,8 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorarch}/Geo/Shapelib.pm
+%dir %{perl_vendorarch}/auto/Geo/Shapelib
 %{perl_vendorarch}/auto/Geo/Shapelib/Shapelib.bs
 %{perl_vendorarch}/auto/Geo/Shapelib/shputils
-%dir %{perl_vendorarch}/auto/Geo/Shapelib
 %attr(755,root,root) %{perl_vendorarch}/auto/Geo/Shapelib/Shapelib.so
 %{_mandir}/man3/*
