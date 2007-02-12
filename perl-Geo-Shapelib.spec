@@ -6,7 +6,7 @@
 %define		pdir	Geo
 %define		pnam	Shapelib
 Summary:	Geo::Shapelib - Perl extension for reading and writing shapefiles as defined by ESRI(r)
-Summary(pl):	Geo::Shapelib - rozszerzenie Perla o obs³ugê r/w plików ESRI(r) SHP
+Summary(pl.UTF-8):   Geo::Shapelib - rozszerzenie Perla o obsÅ‚ugÄ™ r/w plikÃ³w ESRI(r) SHP
 Name:		perl-Geo-Shapelib
 Version:	0.18
 Release:	2
@@ -28,11 +28,11 @@ defined by ESRI(r) using Perl. The Perl code uses Frank Warmerdam's
 Shapefile C Library (http://shapelib.maptools.org/). The library is
 included in this distribution.
 
-%description -l pl
-Biblioteka ta umo¿liwia wczytywanie, tworzenie oraz zapisywanie tzw.
+%description -l pl.UTF-8
+Biblioteka ta umoÅ¼liwia wczytywanie, tworzenie oraz zapisywanie tzw.
 shapefiles zdefiniowanych przez ESRI(r) z poziomu Perla. Kod
-wykorzystuje bibliotekê C Shapefile Franka Warmerdama
-(http://shapelib.maptools.org/). Biblioteka ta jest za³±czona w
+wykorzystuje bibliotekÄ™ C Shapefile Franka Warmerdama
+(http://shapelib.maptools.org/). Biblioteka ta jest zaÅ‚Ä…czona w
 pakiecie.
 
 %prep
