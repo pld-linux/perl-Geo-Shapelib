@@ -6,7 +6,7 @@
 %define		pdir	Geo
 %define		pnam	Shapelib
 Summary:	Geo::Shapelib - Perl extension for reading and writing shapefiles as defined by ESRI(r)
-Summary(pl.UTF-8):   Geo::Shapelib - rozszerzenie Perla o obsługę r/w plików ESRI(r) SHP
+Summary(pl.UTF-8):	Geo::Shapelib - rozszerzenie Perla o obsługę r/w plików ESRI(r) SHP
 Name:		perl-Geo-Shapelib
 Version:	0.18
 Release:	2
