@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Geo
 %define		pnam	Shapelib
 Summary:	Geo::Shapelib - Perl extension for reading and writing shapefiles as defined by ESRI(r)
