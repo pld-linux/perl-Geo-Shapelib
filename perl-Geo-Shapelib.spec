@@ -41,7 +41,8 @@ pakiecie.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
+	INSTALLDIRS=vendor \
+	--shapelib="%{_libdir}/libshp.so"
 
 %{__make}
 
