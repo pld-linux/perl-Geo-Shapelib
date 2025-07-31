@@ -7,15 +7,16 @@
 Summary:	Geo::Shapelib - Perl extension for reading and writing shapefiles as defined by ESRI(r)
 Summary(pl.UTF-8):	Geo::Shapelib - rozszerzenie Perla o obsługę r/w plików ESRI(r) SHP
 Name:		perl-Geo-Shapelib
-Version:	0.20
-Release:	18
+Version:	0.22
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Geo/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ca0246d5b5c8950153a5c48eea0d2d2c
+# Source0-md5:	b6c3cba5e5ea4faaa591d9e66d7216c1
 URL:		http://search.cpan.org/dist/Geo-Shapelib/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	shapelib-devel
 %if %{with tests}
 BuildRequires:	perl-Tree-R
 %endif
@@ -57,9 +58,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes README.md
 %{perl_vendorarch}/Geo/Shapelib.pm
 %dir %{perl_vendorarch}/auto/Geo/Shapelib
-%{perl_vendorarch}/auto/Geo/Shapelib/shputils
 %attr(755,root,root) %{perl_vendorarch}/auto/Geo/Shapelib/Shapelib.so
+%{perl_vendorarch}/auto/Geo/Shapelib/autosplit.ix
 %{_mandir}/man3/*
